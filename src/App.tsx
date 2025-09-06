@@ -10,6 +10,9 @@ export class App extends React.Component<{}, State> {
   };
 
   handleKeyUp = (e: KeyboardEvent) => {
+    // eslint-disable-next-line no-console
+    console.log(e.key);
+
     this.setState({ pressedKey: e.key });
   };
 
